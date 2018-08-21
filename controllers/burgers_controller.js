@@ -22,7 +22,6 @@ router.post("/", function (req, res) {
 });
 
 
-
 router.put("/", function (req, res) {
   db.Burger.update({
     devoured: true
