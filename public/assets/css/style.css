@@ -1,0 +1,69 @@
+/*CSS*/
+
+body {
+    width: 100%;
+    height: 750px;
+    background-color: #f8d287;
+  }
+  
+  #top-bar {
+      margin-top: 28px;
+  }
+  
+  h1 {
+      margin-left: 40%;
+  }
+  
+  img {
+    width: 300px;
+    height: 225px;
+    margin-left: 37%;
+  }
+  
+  .text-center {
+      margin: auto;
+      text-align: left;
+  }
+  
+  .enter_section {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      text-align: center;
+  }
+  
+  #enter_text {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin: auto;
+      width: 400px;
+      height: 80px;
+      font-size: 20px;
+      border-width: 3px;
+      border-color: black;
+  }
+  
+  .task {
+      border-style: solid;
+      border-color: black;
+      border-width: 3px;
+  }
+  
+  .button-size {
+      padding-bottom: 20px;
+  }
+  
+  #text-enter-button {
+      margin-top: 10px;
+      margin-bottom: 18px;
+  }
+  
+  h1 {
+    color: #c93a16;
+  }
+  
+  pre {
+      width: 350px;
+      margin: auto;
+      border-width: 3px;
+      border-color: black; 
+  }

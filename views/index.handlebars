@@ -1,0 +1,66 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center" id="top-bar">
+      <img src="../images/burger.jpg" alt="burger">
+      <h1> Eat-Da-Burger! </h1>
+    </div>
+    <div class="row">
+      <div class="col-md-1">
+      </div>
+      <div class="col-md-4" id="ready">
+        <h3>Ready To Devour!</h3>
+      </div>
+      <div class="col-md-3">
+      </div>
+      <div class="col-md-4" id="eat">
+        <h3>Devoured!</h3>
+      </div>
+    </div>
+
+    <!--List the burgers from my database into the html-->
+    <div class="col-md-6 text-center" class="task">
+      <div class="row">
+        {{#each burgers}} {{#unless this.devoured}}
+        <div class="col-md-8 text-center">
+          <pre>
+            {{this.id}}. {{this.burger_name}}
+					</pre>
+        </div>
+        <div class="col-md-3 text-center">
+          <form action="/?_method=PUT" method="POST" class="button-size">
+            <input type="hidden" name="id" value="{{this.id}}">
+            <br>
+            <button type="submit" class="btn btn-default">Devour!</button>
+          </form>
+        </div>
+        {{/unless}} {{/each}}
+      </div>
+    </div>
+
+    <!--If the burger is devoured, move it from the Ready To Devour Column to the Devoured Column-->
+    <div class="col-md-6 text-center" class="task">
+      <div class="form-group">
+        {{#each burgers}} {{#if this.devoured}}
+        <pre>
+          {{this.id}}. {{this.burger_name}}
+        </pre>
+        <br> {{/if}} {{/each}}
+      </div>
+    </div>
+  </div>
+
+  <!--Form to add a new burger to the Ready to Devour column-->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center enter_section">
+        <form method="POST" action="/" class="button-size">
+          <textarea type="text" name="burger_name" id="enter_text"></textarea>
+          <br>
+          <button type="submit">Submit!</button>
+        </form>
+        <h3>
+          <p>Enter a burger you want to eat and Click the "Submit" button.</p>
+        </h3>
+      </div>
+    </div>
+  </div>
