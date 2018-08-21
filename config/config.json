@@ -1,18 +1,24 @@
 {
-    "development": {
-      "use_env_variable": "LOCALDB",
-      "dialect": "mysql"
-    },
-    "test": {
-      "username": "root",
-      "password": null,
-      "database": "database_test",
-      "host": "127.0.0.1",
-      "port": 3306,
-      "dialect": "mysql"
-    },
-    "production": {
-      "use_env_variable": "JAWSDB",
-      "dialect": "mysql"
-    }
+  "development": {
+    "username": "root",
+    "password": "mathieu1",
+    "database": "sequelize_burger_db",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "hlm5090cf3gb6i0c",
+    "password": "q2dpuzzew8xzgx0s",
+    "database": "fosvftxaaqj49kpd",
+    "host": "blonze2d5mrbmcgf.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "dialect": "mysql"
   }
+}
+
